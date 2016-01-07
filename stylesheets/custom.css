@@ -19,3 +19,11 @@
 .videos {
   max-width:560px;
 }
+
+a.donate {
+    display: block;
+}
+a.donate img {
+    max-height: 44px;
+    max-width: 100%;
+}
