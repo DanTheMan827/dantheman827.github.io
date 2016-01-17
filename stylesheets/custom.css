@@ -27,3 +27,6 @@ a.donate img {
     max-height: 44px;
     width: 100%;
 }
+.site-footer {
+    padding: 2rem 0;
+}
