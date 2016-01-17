@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>iOS App Signer by DanTheMan827</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/github-light.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/custom.css" media="screen">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-50411-3', 'auto');
+      ga('send', 'pageview');
+      
+    </script>
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">iOS App Signer</h1>
+      <h2 class="project-tagline"><img src="images/screenshot.png" alt="Screenshot"></h2>
+      <a href="https://github.com/DanTheMan827/ios-app-signer" class="btn">View on GitHub</a>
+      <a href="https://github.com/DanTheMan827/ios-app-signer/releases/download/b15/iOS.App.Signer.app.zip" class="btn">Download r15</a>
+      <a href="https://raw.githubusercontent.com/DanTheMan827/ios-app-signer/shell_script/app-sign.sh" class="btn">Shell Script</a>
+	  <a href="https://paypal.me/DanTheMan827" class="donate">
+        <img src="/images/donate-button.svg" alt="Donate">
+      </a>
+    </section>
+    <section class="main-content">
+      <div id="topad">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Github -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-5924968361554698"
+			 data-ad-slot="1147664766"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+      </div>
+      <h1>
+        <a id="ios-app-signer" class="anchor" href="#ios-app-signer" aria-hidden="true"><span class="octicon octicon-link"></span></a>iOS App Signer
+      </h1>
+      <p>This is an app for OS X that can (re)sign apps and bundle them into ipa files that are ready to be installed on an iOS device.</p>
+      <p>Supported input types are: ipa, deb, app, xcarchive</p>
+      <h2>
+        <a id="videos" class="anchor" href="#videos" aria-hidden="true"><span class="octicon octicon-link"></span></a>Videos
+      </h2>
+      <div class="videos">
+        <p><strong>How to install Kodi on iOS without jailbreak</strong></p>
+        <div class="youtube"><iframe src="https://www.youtube.com/embed/2OxgmpNVatw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+        <p><strong>How to install Kodi on the Apple TV 4</strong></p>
+        <div class="youtube"><iframe src="https://www.youtube.com/embed/KFFXtGv4azw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></div>
+      </div>
+	  <h2>
+		<a id="prerequisites"><span class="octicon octicon-link"></span></a>Prerequisites
+      </h2>
+	  <p>To sign the application, you're going to need Mac OS X 10.9 or newer and Xcode 7 or newer.</p>
+      <p>In order to install the signed application to your device you're going to need a cable.<p>
+	  <p>For the Apple TV 4, you'll need either a <a href="http://amzn.to/1RHIQ5k">USB-A to USB-C cable</a> or a <a href="http://amzn.to/1JGxDks">USB-C to USB-C cable</a>.</p>
+	  <p>For iOS devices, you'll either need a <a href="http://amzn.to/1RHJJuA">lightning cable</a> or a <a href="http://amzn.to/1JGxcGI">cable with the 30-pin dock connector</a>.</p>
+      <h2>
+        <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage
+      </h2>
+      <p>If you have a paid developer account or a signing certificate and provisioning profile, you can skip to step 7 and just use your signing certificate and the profile.</p>
+      <ol>
+        <li>
+          <p>Open Xcode and create a new iOS or tvOS application depending on your device type</p>
+          <p><img src="images/howto-1.png" alt=""></p>
+        </li>
+        <li>
+          <p>Type in a name and identifier (choose something unique, something like com.yourname.kodi)</p>
+          <p><img src="images/howto-2.png" alt=""></p>
+        </li>
+        <li>
+          <p>Xcode will complain about the provisioning profile, click fix issue</p>
+          <p><img src="images/howto-3.png" alt=""></p>
+        </li>
+        <li>
+          <p>Xcode may have you sign into an Apple ID, click Add...</p>
+          <p><img src="images/howto-4.png" alt=""></p>
+        </li>
+        <li>
+          <p>Then you'll see something like this, select your ID and click Choose</p>
+          <p><img src="images/howto-5.png" alt=""></p>
+          <p><strong>If you have additional devices</strong></p>
+          <p>
+          <ul>
+            <li>Plug in the device</li>
+            <li>Go to the Product Menu</li>
+            <li>Under Destination, select your device</li>
+            <li>Repeat from step 3</li>
+          </ul>
+          </p>
+        </li>
+        <li>
+          <p>Xcode should no longer be complaining</p>
+          <p><img src="images/howto-6.png" alt=""></p>
+        </li>
+        <li>
+          <p>Open App Signer, select the deb, your signing certificate, and the provisioning profile</p>
+          <p><img src="images/howto-7.png" alt=""></p>
+        </li>
+        <li>
+          <p>Click start and select an output filename</p>
+        </li>
+        <li>
+          <p>To install the app onto your device go back into Xcode, select the Window menu and then click devices</p>
+          <p><img src="images/howto-8.png" alt=""></p>
+          <p>Then click the + and select the file generated by iOS App Signer</p>
+          <p><img src="images/howto-9.png" alt=""></p>
+        </li>
+      </ol>
+      <h2>
+        <a id="thanks-to" class="anchor" href="#thanks-to" aria-hidden="true"><span class="octicon octicon-link"></span></a>Thanks To
+      </h2>
+      <p><a href="https://github.com/maciekish/iReSign">maciekish / iReSign</a>: The basic process was gleaned from the source code of this project.</p>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/DanTheMan827/ios-app-signer">iOS App Signer</a> is maintained by <a href="https://github.com/DanTheMan827">DanTheMan827</a>.</span>
+      </footer>
+      <div id="bottomad">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- Github -->
+		<ins class="adsbygoogle"
+			 style="display:block"
+			 data-ad-client="ca-pub-5924968361554698"
+			 data-ad-slot="1147664766"
+			 data-ad-format="auto"></ins>
+		<script>
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		</script>
+      </div>
+    </section>
+  </body>
+</html>
