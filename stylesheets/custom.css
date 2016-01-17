@@ -25,5 +25,5 @@ a.donate {
 }
 a.donate img {
     max-height: 44px;
-    max-width: 100%;
+    width: 100%;
 }
