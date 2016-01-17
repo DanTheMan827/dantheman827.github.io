@@ -2,6 +2,7 @@
 title: DOSBox Launcher
 permalink: dosbox-launcher/
 description: A barebones frontend for DOSBox on Windows.
+screenshot: /images/dosbox-launcher.png
 tagline: A barebones frontend for DOSBox
 type: project
 github-link: https://github.com/DanTheMan827/dosbox-launcher
