@@ -5,6 +5,9 @@ description: This is a plugin for homebridge that enables it to use DS18B20 temp
 tagline: A temperature sensor plugin for homebridge
 type: project
 github-link: https://github.com/DanTheMan827/homebridge-ds18b20
+extra-links: [
+  ["View on NPM", "https://www.npmjs.com/package/homebridge-ds18b20"]
+]
 ads: [bottom]
 ---
 # homebridge-ds18b20
