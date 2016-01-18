@@ -5,6 +5,12 @@ plugins_dir:     ./_plugins
 layouts_dir:     ./_layouts
 data_dir: ./_data
 
+compress_html:
+  clippings: all]
+  
+sass:
+  style: compressed
+
 defaults:
   -
     scope:

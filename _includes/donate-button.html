@@ -1,1 +1,1 @@
-<a href="https://paypal.me/DanTheMan827" class="donate"><img src="/images/donate-button.svg" alt="Donate"></a>
+<a href="{% if page.paypal-button != null %}https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id={{ page.paypal-button }}{% else %}https://paypal.me/DanTheMan827{% endif %}" class="donate"><img src="/images/donate-button.svg" alt="Donate"></a>
