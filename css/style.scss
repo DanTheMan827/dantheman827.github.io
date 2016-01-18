@@ -38,3 +38,12 @@ a.donate {
 .site-footer {
   padding: 2rem 0;
 }
+a.project-list {
+  color: #FFF;
+  line-height: 1em;
+  font-weight:bold;
+  position:absolute;
+  top: .75rem;
+  left: .75rem;
+  &:before { content: '< ' }
+}
