@@ -17,12 +17,10 @@ This is an app for OS X that can (re)sign apps and bundle them into ipa files th
 
 Supported input types are: ipa, deb, app, xcarchive
 
-## Videos
+## Video
 <div class="videos">
-  <p><strong>How to install Kodi on iOS without jailbreak</strong></p>
-  <div class="youtube"><iframe src="https://www.youtube.com/embed/2OxgmpNVatw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></div>
-  <p><strong>How to install Kodi on the Apple TV 4</strong></p>
-  <div class="youtube"><iframe src="https://www.youtube.com/embed/KFFXtGv4azw?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></div>
+  <p><strong>How to install Kodi on an Apple TV 4 with working top shelf</strong></p>
+  <div class="youtube"><iframe src="https://www.youtube.com/embed/SI2_-RO10wg?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen=""></iframe></div>
 </div>
 
 ## Prerequisites
