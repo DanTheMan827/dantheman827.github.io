@@ -1,18 +1,11 @@
 ---
-title: iOS App Signer
+title: Instructions
 permalink: ios-app-signer/
-description: This is an app for OS X that can (re)sign apps and bundle them into ipa files that are ready to be installed on an iOS device.
-screenshot: /images/ios-app-signer/screenshots/screenshot.png
-type: project
-github-link: https://github.com/DanTheMan827/ios-app-signer
-download-link: https://github.com/DanTheMan827/ios-app-signer/releases/download/r17/iOS.App.Signer.app.zip
-extra-links: [
-  [Shell Script, "https://raw.githubusercontent.com/DanTheMan827/ios-app-signer/shell_script/app-sign.sh"]
-]
-version: r17
 ads: [top, bottom]
+type: project
+group: ios-app-signer
 ---
-# iOS App Signer
+# Overview
 This is an app for OS X that can (re)sign apps and bundle them into ipa files that are ready to be installed on an iOS device.
 
 Supported input types are: ipa, deb, app, xcarchive

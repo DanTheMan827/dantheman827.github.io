@@ -4,7 +4,58 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import "normalize";
 @import "cayman";
-@import "github";
+.page-header {
+  position:relative;
+  @include large {
+    padding: 6.6rem 6rem;
+  }
+
+  @include medium {
+    padding: 4.6rem 4rem;
+  }
+}
+.project-tagline {
+  opacity:1;
+  img {
+    max-width:100%;
+  }
+}
+.tab-bar {
+  @media screen and (min-width: #{$medium-breakpoint}) {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    line-height: 1em;
+    .btn {
+      border-bottom:0;
+      margin:0 -1px 0 0 !important;
+      border-radius: .4rem .4rem 0 0;
+      padding: .4rem 1.2rem;
+      font-size: .8rem;
+      &:first-child {
+        border-left-width:1px;
+        border-right: 1px solid rgba(255,255,255,.1);
+        ~ .btn {
+          border-left: 1px solid rgba(255,255,255,.1);
+          border-right: 1px solid rgba(255,255,255,.1);
+        }
+      }
+      &.active {
+        background-color: #FFF;
+        color: #159957;
+        font-weight:bold;
+      }
+    }
+  }
+}
+a.tab-bar {
+  position:absolute;
+  height: 1.6rem;
+  @include small {
+    top:0;
+  }
+}
 
 .youtube {
   position: relative;
@@ -46,4 +97,25 @@ a.project-list {
   top: .75rem;
   left: .75rem;
   &:before { content: '< ' }
+}
+.main-content {
+  font-size: .9rem;
+}
+.release {
+  .downloads {
+    i.fa {
+      color: #606c71;
+    }
+    h3 {
+      color: #606c71;
+      font-weight: bold;
+      font-size:.9rem;
+    }
+  }
+}
+#faq ~ p {
+  strong + strong:before {
+    content:'';
+    display:block;
+  }
 }

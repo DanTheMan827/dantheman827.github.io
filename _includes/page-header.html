@@ -1,27 +1,18 @@
 <section class="page-header">
-  <h1 class="project-name">{{ page.title }}</h1>
-  {% if page.screenshot != null or page.tagline != null %}
+  <h1 class="project-name">{{ headerData.title }}</h1>
+  {% if headerData.screenshot != null or headerData.tagline != null %}
     <h2 class="project-tagline">
-      {% if page.screenshot != null %}
-        <img src="{{ page.screenshot }}" alt="{{ page.tagline }}" />
+      {% if headerData.screenshot != null %}
+        <img src="{{ headerData.screenshot }}" alt="{{ headerData.tagline }}" />
       {% else %}
-        {{ page.tagline }}
+        {{ headerData.tagline }}
       {% endif %}
     </h2>
   {% endif %}
   {% if page.type == "project" %}
-    <a href="/" class="project-list">Project List</a>
-    {% if page.github-link != null %}
-      <a href="{{ page.github-link }}" class="btn">View on GitHub</a>
-    {% endif %}
-    {% if page.download-link != null %}
-      <a href="{{ page.download-link }}" class="btn">Download {{ page.version }}</a>
-    {% endif %}
-    {% if page.extra-links != null %}
-      {% for link in page.extra-links %}
-        <a href="{{ link[1] }}" class="btn">{{ link[0] }}</a>
-      {% endfor %}
-    {% endif %}
-    {% include donate-button.html %}
+    {% include project-header.html %}
+  {% endif %}
+  {% if page.type == "project-tab" %}
+    {% include project-header.html %}
   {% endif %}
 </section>

@@ -1,0 +1,19 @@
+<a href="/" class="project-list">Project List {{ page.base }}</a>
+{% if page.group != null %}
+  <a class="tab-bar" name="tab-bar">&nbsp;</a>
+  <span class="tab-bar" name="tab-bar">
+    {% for pageLoop in site.pages %}{% if pageLoop.group == page.group  %}<a href="{{ pageLoop.url }}" class="btn{% if page.url == pageLoop.url %} active{% endif %}">{{ pageLoop.title }}</a>{% endif %}{% endfor %}
+  </span>
+{% endif %}
+{% if headerData.github-link != null %}
+  <a href="{{ headerData.github-link }}" class="btn">View on GitHub</a>
+{% endif %}
+{% if headerData.download-link != null %}
+  <a href="{{ headerData.download-link }}" class="btn">Download {{ headerData.version }}</a>
+{% endif %}
+{% if headerData.extra-links != null %}
+  {% for link in headerData.extra-links %}
+    <a href="{{ link[1] }}" class="btn">{{ link[0] }}</a>
+  {% endfor %}
+{% endif %}
+{% include donate-button.html %}
