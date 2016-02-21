@@ -1,8 +1,9 @@
 <a href="/" class="project-list">Project List {{ page.base }}</a>
 {% if page.group != null %}
-  <a class="tab-bar" name="tab-bar">&nbsp;</a>
-  <span class="tab-bar" name="tab-bar">
-    {% for pageLoop in site.pages %}{% if pageLoop.group == page.group  %}<a href="{{ pageLoop.url }}" class="btn{% if page.url == pageLoop.url %} active{% endif %}">{{ pageLoop.title }}</a>{% endif %}{% endfor %}
+  
+  <span class="tab-bar">
+    <a class="tab-bar" name="tab-bar">&nbsp;</a>
+    {% for pageLoop in site.pages %}{% if pageLoop.group == page.group  %}<a href="{{ pageLoop.url }}#tab-bar" class="btn{% if page.url == pageLoop.url %} active{% endif %}">{{ pageLoop.title }}</a>{% endif %}{% endfor %}
   </span>
 {% endif %}
 {% if headerData.github-link != null %}
