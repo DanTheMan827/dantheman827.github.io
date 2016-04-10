@@ -4,6 +4,6 @@ screenshot: /images/ios-app-signer/screenshots/screenshot.png
 github-link: https://github.com/DanTheMan827/ios-app-signer
 download-link: https://github.com/DanTheMan827/ios-app-signer/releases/download/1.8/iOS.App.Signer.app.zip
 extra-links: [
-  [Shell Script, "https://raw.githubusercontent.com/DanTheMan827/ios-app-signer/shell_script/app-sign.sh"]
+  #[Shell Script, "https://raw.githubusercontent.com/DanTheMan827/ios-app-signer/shell_script/app-sign.sh"]
 ]
 version: "v1.8"
