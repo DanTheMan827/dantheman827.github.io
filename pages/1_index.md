@@ -8,7 +8,7 @@ ads: [bottom]
   {% for page in site.pages %}
     {% if page.type == "project" or page.type == "project-link"  %}
       {% assign pageLink = page.url %}
-      {% if page.github-link != null %}
+      {% if page.type == "project-link" %}
         {% assign pageLink = page.github-link %}
       {% endif %}
       {% if page.group] == null %}
