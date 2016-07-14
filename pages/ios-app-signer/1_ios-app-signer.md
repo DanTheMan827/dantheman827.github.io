@@ -21,9 +21,9 @@ To sign the application, you're going to need Mac OS X 10.9 or newer and Xcode 7
 
 In order to install the signed application to your device you're going to need a cable.
 
-For the Apple TV 4, you'll need either a [USB-A to USB-C cable](http://amzn.to/1RHIQ5k) or a [USB-C to USB-C cable](http://amzn.to/1JGxDks).
+For the Apple TV 4, you'll need either a [USB-A to USB-C cable](http://amzn.to/2adogtm) or a [USB-C to USB-C cable](http://amzn.to/29FwNTP).
 
-For iOS devices, you'll need your [standard sync cable](http://amzn.to/1RHJJuA).
+For iOS devices, you'll need your [standard sync cable](http://amzn.to/29RUdtm).
 
 ## Usage
 If you have a paid developer account or a signing certificate and provisioning profile, you can skip to step 7 and just use your signing certificate and the profile.
