@@ -3,6 +3,7 @@ description: This is an app for OS X that can (re)sign apps and bundle them into
 screenshot: /images/ios-app-signer/screenshots/screenshot.png
 github-link: https://github.com/DanTheMan827/ios-app-signer
 download-link: https://github.com/DanTheMan827/ios-app-signer/releases/download/1.9/iOS.App.Signer.app.zip
+torrent-link: https://github.com/DanTheMan827/ios-app-signer/releases/download/1.9/iOS.App.Signer.v1.9.torrent
 extra-links: [
   #[Shell Script, "https://raw.githubusercontent.com/DanTheMan827/ios-app-signer/shell_script/app-sign.sh"]
 ]
