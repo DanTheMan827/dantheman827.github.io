@@ -12,6 +12,9 @@
 {% if headerData.download-link != null %}
   <a href="{{ headerData.download-link }}" class="btn">Download {{ headerData.version }}</a>
 {% endif %}
+{% if headerData.torrent-link != null %}
+  <a href="{{ headerData.torrent-link }}" class="btn">Download {{ headerData.version }} Torrent</a>
+{% endif %}
 {% if headerData.extra-links != null %}
   {% for link in headerData.extra-links %}
     <a href="{{ link[1] }}" class="btn">{{ link[0] }}</a>
