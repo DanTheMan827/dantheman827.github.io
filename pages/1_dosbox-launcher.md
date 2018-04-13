@@ -6,8 +6,8 @@ screenshot: /images/dosbox-launcher.png
 tagline: A barebones frontend for DOSBox
 type: project
 github-link: https://github.com/DanTheMan827/dosbox-launcher
-download-link: https://github.com/DanTheMan827/dosbox-launcher/releases/download/1.0/dosbox-launcher.exe
-version: 1.0
+download-link: https://github.com/DanTheMan827/dosbox-launcher/releases/download/2.0/dosbox-launcher.exe
+version: 2.0
 ads: [bottom]
 ---
 # DOSBox Launcher
