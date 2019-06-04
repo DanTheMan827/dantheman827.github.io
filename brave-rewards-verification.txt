@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: dantheman827.github.io
+Token: f42c44dea216c13172f5e14a69230a2ae53e22937f7b2416eb1b73e576592eb2
