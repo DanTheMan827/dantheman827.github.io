@@ -16,6 +16,6 @@ ads: [bottom]
       {% assign pageData = site.data[{{page.group}}] %}
     {% endif %}
 
-    <p><b><a href="{{ pageLink }}">{{ pageData.title }}</a></b><br />{{ pageData.description }}</p>
+  <p><b><a href="{{ pageLink }}">{{ pageData.title }}</a></b><br />{{ pageData.description }}</p>
   {% endif %}
 {% endfor %}
