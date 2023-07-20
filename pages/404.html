@@ -1,0 +1,37 @@
+---
+permalink: /404.html
+---
+<h1>404</h1>
+<p id="randomEntry"></p>
+
+<script>
+  window.addEventListener("DOMContentLoaded", function displayRandomMessage() {
+    const messages = [
+      "Houston, we have a 404 problem. Looks like that page has blasted off to another galaxy, leaving us stranded in the void of cyberspace. Time to put on your spacesuit and search for a new link to explore! 🚀🌌",
+      "The missing page is on vacation, sipping margaritas on a sunny beach. We tried calling, but it sent us a postcard saying, 'Wish you were here.' Well, we wish it were here too! 🏖️🍹",
+      "The web page is currently taking a coffee break, which, let's be honest, we could all use right now. Why don't you grab a cup too and try again later when the caffeine kicks in? ☕😴",
+      "Like Bigfoot and UFOs, this page is a mythical creature, rumored to exist but seldom seen. We're still investigating its existence, but until then, keep on hunting for the elusive link! 🦍🛸",
+      "The page you're looking for went on a road trip with Carmen Sandiego and Waldo. They're masters of disguise, so good luck finding them! 🚗🎭",
+      "You've discovered a digital black hole, where links go to vanish without a trace. We're working on mastering the art of wormholes to bring them back, but it might take a while. 🌀🚫",
+      "The page seems to be playing hide-and-seek, but it's taking its sweet time in finding a hiding spot. We'll just sit here and count to a million while it makes up its mind! 🔍🙈",
+      "The page is as shy as a squirrel trying to cross a busy street. It keeps peeking out but quickly scurries away when we get close. Maybe some digital breadcrumbs will help it come out of hiding? 🐿️🍞",
+      "Oh no! The page is as shy as a squirrel trying to cross a busy street. It keeps peeking out but quickly scurries away when we get close. Maybe some digital breadcrumbs will help it come out of hiding? 🐿️🍞",
+      "This page must have joined a witness protection program and is keeping a low profile. We understand; the internet can be a dangerous place. But if you're out there, know that we miss you! 🕵️‍♀️🤫",
+      "It's a digital version of a game of Marco Polo, but instead of shouting 'Polo,' the page remains eerily silent. You can keep calling its name, but it won't answer until it feels like it! 🏊‍♂️🗣️",
+      "This page is taking a quantum leap into the unknown, where it exists and doesn't exist at the same time. It's the Schrödinger's cat of web pages! 🐱⚛️",
+      "Looks like the page moonlights as a magician. It vanished into thin air, leaving us baffled and wondering how it pulled off the trick. Abracadabra, where did you go? 🎩🐇",
+      "The page went on a journey to find the meaning of life but got sidetracked by cat videos and memes. We totally get it. Cats and laughter are essential in life! 🐱😹",
+      "This page is doing its best Houdini impression, attempting to escape the digital chains that bind it. Alas, it hasn't quite mastered the art of escapology. 🔒🎪",
+      "The page seems to have taken a quantum leap into an alternate dimension. If you see any time-traveling dinosaurs, let us know; they might be friends! 🦕🌌",
+      "This page is experiencing a digital blackout, much like a celebrity avoiding paparazzi. It just wants some privacy right now. 📵🕵️‍♂️",
+      "The page is currently at the spa, getting pampered with facials, massages, and cucumber-infused water. It'll be back, glowing and rejuvenated! 💆‍♀️✨",
+      "This page seems to have gone on a sabbatical to write its memoirs. We're eager to read about its adventures when it returns! 📖🗺️",
+      "The page seems to be on a covert mission, infiltrating secret websites. We'd tell you more, but then we'd have to delete your cookies. 🍪🕵️‍♂️"
+    ];
+  
+    const randomIndex = Math.floor(Math.random() * messages.length);
+    const randomMessage = messages[randomIndex];
+    const pTag = document.getElementById("randomEntry");
+    pTag.textContent = randomMessage;
+  });
+</script>
